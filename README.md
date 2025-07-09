@@ -12,7 +12,7 @@ A interface foi desenvolvida com foco em uma experiência de usuário limpa, res
 
 ---
 
-## ✨ Funcionalidades
+## Funcionalidades
 
 - **Listagem de Usuários**: Visualização de todos os perfis em formato de cartões.
 - **Criação de Usuários**: Formulário para adicionar novos perfis ao banco de dados.
@@ -30,7 +30,7 @@ A interface foi desenvolvida com foco em uma experiência de usuário limpa, res
 
 
 
-## 🛠️ Tecnologias Utilizadas
+## Tecnologias Utilizadas
 
 #### **Frontend**
 
@@ -44,7 +44,7 @@ A interface foi desenvolvida com foco em uma experiência de usuário limpa, res
 - **MySQL**: Banco de dados para armazenamento dos perfis.
 - **PDO**: Extensão para conexão segura com o banco de dados.
 
-## 🚀 Como Executar o Projeto Localmente
+## Como Executar o Projeto Localmente
 
 Para rodar este projeto, você precisará de um ambiente de servidor local como XAMPP ou MAMP.
 
@@ -74,7 +74,7 @@ Para rodar este projeto, você precisará de um ambiente de servidor local como 
 
 Pronto! A aplicação deve abrir no seu navegador e carregar os dados do seu banco de dados local.
 
-## 🌐 Deploy
+## Deploy
 
 - O **Frontend** foi hospedado na **Vercel**, integrado diretamente com este repositório GitHub.
 - O **Backend** (API em PHP e banco de dados MySQL) foi hospedado localmente.
