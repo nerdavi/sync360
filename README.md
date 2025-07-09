@@ -4,6 +4,8 @@ Este projeto é uma solução para o desafio técnico proposto pela Sync360.io, 
 
 A interface foi desenvolvida com foco em uma experiência de usuário limpa, responsiva e moderna, incluindo funcionalidades como tema claro/escuro e design minimalista.
 
+<img src="ui-white.png">
+
 ---
 
 ### **[Clique aqui para ver o projeto online](https://davi-sync360.vercel.app)**
