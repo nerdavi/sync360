@@ -80,7 +80,6 @@ function App() {
         estado: '',
         bio: '',
         imagem: '',
-        // MODIFICAÇÃO AQUI: Gera a semente aleatória APENAS UMA VEZ ao abrir o modal para um novo usuário.
         randomSeedForImage: Date.now().toString(),
       };
     }
@@ -193,7 +192,6 @@ function App() {
             <input
               type="text"
               placeholder="Pesquisar usuários..."
-              // Aumentado o padding-left para dar espaço à lupa e ao texto
               className="input pl-10 pr-4 w-full"
               value={searchTerm}
               onChange={handleSearchChange}
@@ -239,7 +237,6 @@ function App() {
               <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
             </button>
             <div className="space-y-4">
-              {/* MODIFICAÇÃO AQUI: Lógica para a imagem no modal */}
               <img
                 src={
                   form.imagem || // Prioriza a imagem definida no formulário (pelo usuário)
