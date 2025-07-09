@@ -3,7 +3,7 @@ const { useState, useEffect, useCallback } = React;
 // IMPORTANTE: Altere esta URL para a do seu backend
 const API_URL = window.location.hostname === "localhost"
   ? "http://localhost/sync360/backend/"
-  : "http://localhost/sync360/backend/"; // <-- EXPLIQUE no README que backend deve estar local
+  : "http://localhost/sync360/backend/"; // 
 
 function App() {
   const [usuarios, setUsuarios] = useState([]);
