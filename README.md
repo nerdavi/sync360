@@ -17,7 +17,7 @@ A interface foi desenvolvida com foco em uma experiência de usuário limpa, res
 - **Listagem de Usuários**: Visualização de todos os perfis em formato de cartões.
 - **Criação de Usuários**: Formulário para adicionar novos perfis ao banco de dados.
 - **Edição de Usuários**: Modal para alterar todas as informações de um perfil existente.
-- **Deleção de Usuários**: Opção para remover um usuário do sistema (com confirmação).
+- **Exclusão de Usuários**: Opção para remover um usuário do sistema (com confirmação).
 - **Interface Responsiva**: Layout adaptável para desktops, tablets e smartphones.
 - **Tema Claro e Escuro**: Botão para alternar entre os temas, com persistência da escolha do usuário.
 
