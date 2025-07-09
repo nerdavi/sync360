@@ -22,7 +22,12 @@ A interface foi desenvolvida com foco em uma experiência de usuário limpa, res
 - **Tema Claro e Escuro**: Botão para alternar entre os temas, com persistência da escolha do usuário.
 
 <img src="img/ui-white.png">
-<img src="img/delete-user.jpg"><img src="img/new-user.jpg">
+<img src="img/delete-user.jpg">
+<div style="display: flex; justify-content: space-between; align-items: flex-start;">
+  <img src="img/new-user.jpg" alt="Criação de Novo Usuário" style="max-width: 45%; height: auto;">
+  <img src="img/edit-user.jpg" alt="Edição de Usuário" style="max-width: 45%; height: auto;">
+</div>
+
 
 
 
