@@ -66,7 +66,24 @@ function App() {
   }, [usuarios, searchTerm]);
 
   const abrirModal = (usuario) => {
-    const usuarioParaForm = usuario || { nome: '', idade: '', rua: '', bairro: '', estado: '', bio: '', imagem: '' };
+    let usuarioParaForm;
+    if (usuario) {
+      // Editando usuário existente: usa os dados do usuário.
+      usuarioParaForm = { ...usuario };
+    } else {
+      // Criando novo usuário: inicializa com campos vazios e uma semente aleatória para a imagem.
+      usuarioParaForm = {
+        nome: '',
+        idade: '',
+        rua: '',
+        bairro: '',
+        estado: '',
+        bio: '',
+        imagem: '',
+        // MODIFICAÇÃO AQUI: Gera a semente aleatória APENAS UMA VEZ ao abrir o modal para um novo usuário.
+        randomSeedForImage: Date.now().toString(),
+      };
+    }
     setForm(usuarioParaForm);
     setModalAberto(true);
   };
@@ -222,7 +239,18 @@ function App() {
               <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
             </button>
             <div className="space-y-4">
-              <img src={form.imagem || `https://i.pravatar.cc/150?u=new`} alt="Preview" className="w-24 h-24 rounded-full object-cover mx-auto mb-4 border-4 border-gray-300 dark:border-gray-600" />
+              {/* MODIFICAÇÃO AQUI: Lógica para a imagem no modal */}
+              <img
+                src={
+                  form.imagem || // Prioriza a imagem definida no formulário (pelo usuário)
+                  (form.id // Se não houver imagem do usuário, verifica se é um usuário existente
+                    ? `https://i.pravatar.cc/150?u=${form.id}` // Usuário existente: usa o ID para um avatar consistente
+                    : `https://i.pravatar.cc/150?u=${form.randomSeedForImage}` // Novo usuário: usa a semente aleatória gerada na abertura do modal
+                  )
+                }
+                alt="Preview"
+                className="w-24 h-24 rounded-full object-cover mx-auto mb-4 border-4 border-gray-300 dark:border-gray-600"
+              />
               <input className="input" name="nome" value={form.nome} onChange={handleChange} placeholder="Nome completo" required />
               <div className="flex gap-4"><input className="input" name="idade" type="number" value={form.idade} onChange={handleChange} placeholder="Idade" /><input className="input" name="estado" value={form.estado} onChange={handleChange} placeholder="Estado (UF)" required maxLength="2" /></div>
               <div className="flex gap-4"><input className="input" name="rua" value={form.rua} onChange={handleChange} placeholder="Rua" /><input className="input" name="bairro" value={form.bairro} onChange={handleChange} placeholder="Bairro" /></div>
