@@ -4,7 +4,7 @@ Este projeto é uma solução para o desafio técnico proposto pela Sync360.io, 
 
 A interface foi desenvolvida com foco em uma experiência de usuário limpa, responsiva e moderna, incluindo funcionalidades como tema claro/escuro e design minimalista.
 
-<img src="ui-white.png">
+<img src="img/ui-black.jpg">
 
 ---
 
@@ -20,6 +20,11 @@ A interface foi desenvolvida com foco em uma experiência de usuário limpa, res
 - **Deleção de Usuários**: Opção para remover um usuário do sistema (com confirmação).
 - **Interface Responsiva**: Layout adaptável para desktops, tablets e smartphones.
 - **Tema Claro e Escuro**: Botão para alternar entre os temas, com persistência da escolha do usuário.
+
+<img src="img/ui-white.png">
+<img src="img/delete-user.jpg"><img src="img/new-user.jpg">
+
+
 
 ## 🛠️ Tecnologias Utilizadas
 
