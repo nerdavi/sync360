@@ -58,7 +58,7 @@ Para rodar este projeto, você precisará de um ambiente de servidor local como 
 
 1.  Abra a pasta do projeto no VS Code.
 2.  Abra o arquivo `app.js`.
-3.  **IMPORTANTE**: Na linha `const API_URL = '...';`, altere a URL para o caminho da sua pasta de backend. Ex: `const API_URL = 'http://localhost/desafio-backend/';`.
+3.  **IMPORTANTE**: Na linha `const API_URL = '...';`, altere a URL para o caminho da sua pasta de backend. Ex: `const API_URL = 'http://localhost/backend/';`.
 4.  Clique com o botão direito no arquivo `index.html` e selecione "Open with Live Server".
 
 Pronto! A aplicação deve abrir no seu navegador e carregar os dados do seu banco de dados local.
@@ -66,6 +66,6 @@ Pronto! A aplicação deve abrir no seu navegador e carregar os dados do seu ban
 ## 🌐 Deploy
 
 - O **Frontend** foi hospedado na **Vercel**, integrado diretamente com este repositório GitHub.
-- O **Backend** (API em PHP e banco de dados MySQL) foi hospedado em um serviço de hospedagem compartilhada.
+- O **Backend** (API em PHP e banco de dados MySQL) foi hospedado localmente.
 
 ---
