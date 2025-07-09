@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Desafio Sync360 - Perfil de Usuário</title>
+    <link rel="icon" href="https://sync360.io/wp-content/uploads/2022/07/icon-transp.png" sizes="192x192">
+    <link rel="icon" type="image/png" href="https://sync360.io/wp-content/uploads/2022/07/icon-transp-150x150.png">
+    <link rel="apple-touch-icon" href="https://sync360.io/wp-content/uploads/2022/07/icon-transp.png">
+    <script src="https://unpkg.com/react@18/umd/react.development.js" crossorigin></script>
+    <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js" crossorigin></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      // Habilita o modo escuro no Tailwind
+      tailwind.config = {
+        darkMode: 'class',
+      }
+    </script>
+    <style type="text/tailwindcss">
+      .input {
+        @apply border border-gray-300 dark:border-gray-600 rounded-lg p-3 w-full bg-white dark:bg-gray-700 text-gray-800 dark:text-gray-200 focus:ring-2 focus:ring-blue-500 focus:outline-none transition;
+      }
+      .modal-bg {
+        @apply fixed inset-0 bg-black bg-opacity-70 flex items-center justify-center z-50 p-4 backdrop-blur-sm;
+      }
+      .modal-content {
+        @apply bg-white dark:bg-gray-800 rounded-xl shadow-2xl p-6 max-w-md w-full relative transform transition-all scale-95 opacity-0 animate-fade-in-scale;
+      }
+      .btn {
+        @apply px-5 py-2 rounded-lg font-semibold transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-offset-2 dark:focus:ring-offset-gray-800;
+      }
+      .btn-primary {
+        @apply btn bg-blue-600 text-white hover:bg-blue-700 focus:ring-blue-500;
+      }
+      .btn-secondary {
+        @apply btn bg-gray-200 dark:bg-gray-700 text-gray-700 dark:text-gray-200 hover:bg-gray-300 dark:hover:bg-gray-600 focus:ring-gray-400;
+      }
+      .card {
+        @apply cursor-pointer bg-white dark:bg-gray-700 rounded-xl p-4 shadow-md hover:shadow-xl hover:-translate-y-1 transition-all duration-300 flex flex-col items-center border border-gray-200 dark:border-gray-600;
+      }
+      .card-image {
+        @apply w-24 h-24 rounded-full object-cover border-4 border-blue-200 dark:border-blue-700;
+      }
+      .card-title {
+        @apply mt-4 text-center text-gray-800 dark:text-gray-100 font-bold text-lg;
+      }
+      .card-subtitle {
+        @apply text-center text-sm text-gray-500 dark:text-gray-400;
+      }
+      @keyframes fade-in-scale {
+        from { transform: scale(0.95); opacity: 0; }
+        to { transform: scale(1); opacity: 1; }
+      }
+      .animate-fade-in-scale {
+        animation: fade-in-scale 0.3s ease-out forwards;
+      }
+    </style>
+  </head>
+  <body class="bg-gray-100 dark:bg-gray-900 min-h-screen flex items-center justify-center p-4 sm:p-6 transition-colors duration-300">
+    <main id="root" class="w-full max-w-7xl"></main>
+    <script type="text/babel" src="app.js"></script>
+  </body>
+</html>
