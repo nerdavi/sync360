@@ -6,7 +6,7 @@ A interface foi desenvolvida com foco em uma experiência de usuário limpa, res
 
 ---
 
-### **[Clique aqui para ver o projeto online](/)**
+### **[Clique aqui para ver o projeto online](/https://davi-sync360.vercel.app)**
 
 ---
 
